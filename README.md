@@ -1,3 +1,11 @@
+# Quick start for GRAPE Devs:
+
+1. Clone repo
+2. install with `npm i`
+3. Run `npm run develop`
+4. Go to http://localhost:8000
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
