@@ -1,9 +1,13 @@
-import * as React from "react"
+import * as React from 'react';
+import SocialLinks from './SocialLinks';
+import { navbar } from '../styles/navigation.module.css';
 
 const Navbar = () => {
   return (
-    <nav></nav>
-  )
+    <nav className={navbar}>
+      <SocialLinks />
+    </nav>
+  );
 };
 
 export default Navbar;

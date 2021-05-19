@@ -1,0 +1,19 @@
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  margin-right: 35px;
+  color: white;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.icon:hover {
+  color: #dc1fff;
+}
