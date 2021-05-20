@@ -1,19 +1,75 @@
 .navbar {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
+  padding: 5px 15px;
+  color: whitesmoke;
+  font-family: Aldrich, sans-serif;
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  margin-right: 35px;
-  color: white;
-  text-decoration: none;
   color: whitesmoke;
+  font-size: 27px;
+  margin-right: 35px;
+  text-decoration: none;
 }
 
 .icon:hover {
   color: #dc1fff;
+}
+
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  margin-left: 35px;
+  font-size: 20px;
+}
+
+.navLink:hover {
+  color: #dc1fff;
+  cursor: pointer;
+}
+
+.noHoverLink {
+  margin-left: 35px;
+  font-size: 20px;
+  cursor: default;
+}
+
+.litePaperNavContainer {
+  position: relative;
+}
+
+.litePaperNavLink {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.litePaperMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: -5px;
+  width: 90%;
+  background: black;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.languageItem {
+  margin: 0;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.languageItem:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }

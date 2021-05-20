@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '../styles/navigation.module.css';
+import { icon, flexAlignCenter } from '../styles/navigation.module.css';
 
 export default function SocialLinks() {
   return (
-    <div>
+    <div className={flexAlignCenter}>
       <a target='_blank' href='https://twitter.com/solanagrape' rel='noopener noreferrer'>
         <FontAwesomeIcon icon={['fab', 'twitter']} className={icon} />
       </a>
@@ -15,7 +15,7 @@ export default function SocialLinks() {
         <FontAwesomeIcon icon={['fab', 'twitch']} className={icon} />
       </a>
       <a target='_blank' href='https://medium.com/great-ape' rel='noopener noreferrer'>
-        <FontAwesomeIcon icon={['fab', 'medium-m']} className={icon} />
+        <FontAwesomeIcon icon={['fab', 'medium-m']} className={icon} style={{ fontSize: '30px' }} />
       </a>
     </div>
   );

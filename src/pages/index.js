@@ -2,9 +2,10 @@ import * as React from 'react';
 import Navbar from '../components/Navbar';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { main, container } from '../styles/pageStyles.module.css';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { main, container, borderGradient } from '../styles/pageStyles.module.css';
 
-library.add(fab);
+library.add(fab, fas);
 
 // markup
 const IndexPage = () => {
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <div className={container}>
         <Navbar />
       </div>
+      <div className={borderGradient} />
     </main>
   );
 };
