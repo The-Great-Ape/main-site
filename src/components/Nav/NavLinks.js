@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as navStyles from '../styles/navigation.module.css';
+import * as navStyles from '../../styles/navigation.module.css';
 
 export default function NavLinks() {
   const [opemnLitePaperMenu, setOpemnLitePaperMenu] = React.useState(false);

@@ -1,15 +1,14 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 5px 15px;
-  color: whitesmoke;
+  padding: 1rem 1.5rem;
   font-family: Aldrich, sans-serif;
 }
 
 .icon {
   color: whitesmoke;
-  font-size: 27px;
-  margin-right: 35px;
+  font-size: 2.7rem;
+  margin-right: 3.5rem;
   text-decoration: none;
 }
 
@@ -23,8 +22,8 @@
 }
 
 .navLink {
-  margin-left: 35px;
-  font-size: 20px;
+  margin-left: 3.5rem;
+  font-size: 2rem;
 }
 
 .navLink:hover {
@@ -33,8 +32,8 @@
 }
 
 .noHoverLink {
-  margin-left: 35px;
-  font-size: 20px;
+  margin-left: 3.5rem;
+  font-size: 2rem;
   cursor: default;
 }
 
@@ -45,8 +44,8 @@
 .litePaperNavLink {
   display: flex;
   align-items: center;
-  margin-left: 35px;
-  font-size: 20px;
+  margin-left: 3.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -54,8 +53,8 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
-  margin-top: -5px;
+  margin-left: 2.5rem;
+  margin-top: -0.5rem;
   width: 90%;
   background: black;
   border: 1px solid whitesmoke;
@@ -64,7 +63,8 @@
 
 .languageItem {
   margin: 0;
-  padding: 15px 20px;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   color: whitesmoke;
 }
