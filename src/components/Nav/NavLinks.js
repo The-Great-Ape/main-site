@@ -3,7 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as navStyles from '../../styles/navigation.module.css';
 
 export default function NavLinks() {
-  const [opemnLitePaperMenu, setOpemnLitePaperMenu] = React.useState(false);
+  const [openLitePaperMenu, setOpenLitePaperMenu] = React.useState(false);
+  let menuRef = React.useRef();
+
+  React.useEffect(() => {
+    let handler = (e) => {
+      if (menuRef && menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpenLitePaperMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handler);
+
+    return () => {
+      document.removeEventListener('mousedown', handler);
+    };
+  });
 
   return (
     <div className={navStyles.flexAlignCenter}>
@@ -13,21 +28,21 @@ export default function NavLinks() {
       <div className={navStyles.noHoverLink}>
         <p>Roadmap</p>
       </div>
-      <div className={navStyles.litePaperNavContainer}>
+      <div className={navStyles.litePaperNavContainer} ref={menuRef}>
         <div
           className={navStyles.litePaperNavLink}
-          onClick={() => setOpemnLitePaperMenu((prev) => !prev)}
+          onClick={() => setOpenLitePaperMenu((prev) => !prev)}
         >
           <p>
             Litepaper{' '}
             <FontAwesomeIcon
               icon={['fas', 'caret-down']}
-              style={{ fontSize: '20px', marginTop: -10, marginLeft: 10 }}
+              style={{ fontSize: '20px', marginLeft: '5px', marginTop: '-5px' }}
             />
           </p>
         </div>
 
-        {opemnLitePaperMenu && (
+        {openLitePaperMenu && (
           <div className={navStyles.litePaperMenu}>
             <a
               className={navStyles.languageItem}
