@@ -1,7 +1,7 @@
 import * as React from 'react';
 import SocialLinks from './SocialLinks';
 import NavLinks from './NavLinks';
-import { navbar } from '../styles/navigation.module.css';
+import { navbar } from '../../styles/navigation.module.css';
 
 const Navbar = () => {
   return (

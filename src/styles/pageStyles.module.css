@@ -1,14 +1,15 @@
-body {
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 .main {
   background-color: #000000;
-  padding-bottom: 30px;
+  color: whitesmoke;
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -21,4 +22,8 @@ body {
     rgba(177, 75, 236, 1) 0%,
     rgba(1, 255, 164, 1) 100%
   );
+}
+
+p {
+  line-height: 1px;
 }

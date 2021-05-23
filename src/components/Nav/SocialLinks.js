@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon, flexAlignCenter } from '../styles/navigation.module.css';
+import { icon, flexAlignCenter } from '../../styles/navigation.module.css';
 
 export default function SocialLinks() {
   return (

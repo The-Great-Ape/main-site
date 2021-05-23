@@ -1,0 +1,21 @@
+.container {
+  padding: 5rem 0;
+  font-family: Exo, sans-serif;
+}
+
+.chartImg {
+  width: 100%;
+  margin-top: -10%;
+}
+
+.heading {
+  color: rgb(220, 31, 255);
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.subHeading {
+  color: whitesmoke;
+  font-size: 2.2rem;
+  font-weight: 200;
+}
