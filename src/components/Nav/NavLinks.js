@@ -1,6 +1,7 @@
-import * as React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as navStyles from '../../styles/navigation.module.css';
+import * as React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as navStyles from "../../styles/navigation.module.css";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export default function NavLinks() {
   const [openLitePaperMenu, setOpenLitePaperMenu] = React.useState(false);
@@ -13,18 +14,20 @@ export default function NavLinks() {
       }
     };
 
-    document.addEventListener('mousedown', handler);
+    document.addEventListener("mousedown", handler);
 
     return () => {
-      document.removeEventListener('mousedown', handler);
+      document.removeEventListener("mousedown", handler);
     };
   });
 
   return (
     <div className={navStyles.flexAlignCenter}>
-      <div className={navStyles.navLink}>
-        <p>Tokenomics</p>
-      </div>
+    <AnchorLink to="#tokenomics" title="Tokenomics" className={navStyles.navLink}>
+        <div >
+          <p>Tokenomics</p>
+        </div>
+      </AnchorLink>
       <div className={navStyles.noHoverLink}>
         <p>Roadmap</p>
       </div>
@@ -34,10 +37,10 @@ export default function NavLinks() {
           onClick={() => setOpenLitePaperMenu((prev) => !prev)}
         >
           <p>
-            Litepaper{' '}
+            Litepaper{" "}
             <FontAwesomeIcon
-              icon={['fas', 'caret-down']}
-              style={{ fontSize: '20px', marginLeft: '5px', marginTop: '-5px' }}
+              icon={["fas", "caret-down"]}
+              style={{ fontSize: "20px", marginLeft: "5px", marginTop: "-5px" }}
             />
           </p>
         </div>
@@ -46,17 +49,17 @@ export default function NavLinks() {
           <div className={navStyles.litePaperMenu}>
             <a
               className={navStyles.languageItem}
-              href='../docs/GRAPE_Protocol_Litepaper.pdf'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="./GRAPE_Protocol_Litepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               English
             </a>
             <a
               className={navStyles.languageItem}
-              href='../docs/GRAPE_Protocol_Litepaper_Chinese.pdf'
-              target='_blank'
-              rel='noopener noreferrer'
+              href="./GRAPE_Protocol_Litepaper_Chinese.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Chinese
             </a>
