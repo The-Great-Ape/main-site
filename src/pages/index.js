@@ -7,6 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { main, container, borderGradient } from '../styles/pageStyles.module.css';
 import "./index.css"
+import Button from "../components/Button";
 
 library.add(fab, fas);
 
@@ -17,6 +18,9 @@ const IndexPage = () => {
       <div className={container}>
         <Navbar />
       </div>
+      <Button>
+        Read Whitepaper
+      </Button>
       <div className={borderGradient} />
       <div className={container}>
         <Hero />
