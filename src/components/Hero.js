@@ -1,6 +1,5 @@
 import * as React from "react";
 import logo from "../images/logo.png";
-import solanaSzn from "../images/BACKGROUND_HACKATHON.png";
 import * as styles from "../styles/hero.module.css";
 import { StaticQuery, graphql } from "gatsby";
 
