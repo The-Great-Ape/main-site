@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: 'main-site',
@@ -52,6 +56,13 @@ module.exports = {
         //
         // Defaults to gatsby-route-change
         routeChangeEventName: "virtualPageView",
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+          spaceId: process.env.CONT_SPACE_ID,
+          accessToken: process.env.CONT_ACCESS_TOKEN,
       },
     }
   ],
